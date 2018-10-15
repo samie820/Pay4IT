@@ -2,6 +2,10 @@
   "name": "project",
   "private": true,
   "version": "0.0.0",
+  "scripts": {
+    "setDevEnv": "export ASPNETCORE_ENVIRONMENT=Development",
+    "start": "npm run setDevEnv && dotnet run"
+  },
   "devDependencies": {
     "aspnet-webpack": "^2.0.1",
     "css-loader": "^0.25.0",
